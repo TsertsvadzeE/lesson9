@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Holtwood+One+SC&family=Indie+Flower&family=Inter:wght@700&family=Poor+Story&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Holtwood+One+SC&family=Indie+Flower&family=Inter:wght@700&family=Lobster&family=Poor+Story&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Holtwood+One+SC&family=Indie+Flower&family=Inter:wght@700&family=Lobster&family=Poor+Story&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Holtwood+One+SC&family=Indie+Flower&family=Inter:wght@700&family=Lato:ital@1&family=Lobster&family=Poor+Story&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Holtwood+One+SC&family=Indie+Flower&family=Inter:wght@700&family=Lato:ital@1&family=Lobster&family=Poor+Story&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Zen+Antique+Soft&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin{
+    margin: 0 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: larger;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: rgba(104, 101, 101, 0.671);
+    color: white;
+    border-radius: 10px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    padding: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(60, 60, 61, 0.027);
+}
+
+.sub-menu li a{
+    display: inline-block;
+    font-size:small; 
+    margin: 5px 0;
+}
+
+.menu li a{
+    color: rgb(73, 71, 71);
+}
+
+.menu li a:link{
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: rgba(104, 101, 101, 0.671);
+    color: white;
+}
+
+.menu li:hover .sub-menu{
+    display: block;
+}
+
+.cover{
+    height: 400px;
+    background-image:url(cover.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 11px 11px 28px -2px rgba(13,12,13,0.62);
+}
+
+.box{
+    width: 900px;
+    margin: auto;
+}
+
+.minibox{
+    width: 350px;
+    margin-left: auto;
+    padding: 30px;
+    background-color: rgba(158, 154, 154, 0.726);
+    border-radius: 10px;
+}
+
+.text{
+    padding: 30px;
+    border: white solid 2px;
+    text-align: center;
+}
+
+.text h1{
+    margin-bottom: 10px;
+}
+
+.menu2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu2 li{
+    list-style: none;
+    padding: 50px 30px;
+    font-size: larger;
+    font-family: Bebas Neue;
+}
+
+.menu2 li a{
+    color: black;
+    transition: 0.1s;
+}
+
+.menu2 li a:link{
+    text-decoration:none;
+}
+
+.menu2 li a:hover{
+    background-color: black;
+    color:white;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card{
+    box-shadow: -1px 9px 20px 1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -1px 9px 20px 1px rgba(0,0,0,0.67);
+    -moz-box-shadow: -1px 9px 20px 1px rgba(0,0,0,0.67);
+    border-radius: 7px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.cards .card:hover{
+    background-color: rgba(236, 232, 232, 0.534);
+    color: brown;
+    transform:scale(1.03);
+}
+
+.cards .card figure{
+    height: 450px;
+}
+
+.cards .card figure img{
+    height: 100%;
+    width: 100%; 
+    object-fit:cover;
+}
+
+.cards .card h3{
+    text-align: center;
+    margin: 10px 0;
+    font-family: Lobster;
+    text-transform: uppercase;
+}
+
+.cards .card p{
+    text-align: center;
+    margin: 20px 0;
+    font-family: Dancing Script;
+}
+
+.blog{
+    background-color: rgba(172, 172, 172, 0.534);
+    margin: 50px 0;
+    padding-bottom: 50px;
+}
+
+.blogtitle{
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: grey;
+    padding: 50px;
+}
+
+.cards2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.cards2 .card2{
+    box-shadow: 4px 3px 16px 3px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 4px 3px 16px 3px rgba(255,255,255,0.75);
+    -moz-box-shadow: 4px 3px 16px 3px rgba(255,255,255,0.75);
+    transition: 1s;
+    color: grey;
+}
+
+.cards2 .card2:hover{
+    color:black;
+    transform:perspective();
+}
+
+.cards2 .card2 figure{
+    height: 350px;
+}
+
+.cards2 .card2 figure img{
+    height: 100%;
+    width: 100%; 
+    object-fit:cover;
+}
+
+.cards2 .card2 h3{
+    text-align: center;
+    margin: 10px 0;
+    font-family: Lato;
+    text-transform: capitalize;
+}
+
+.cards2 .card2 p{
+    text-align: center;
+    margin: 20px 0;
+    font-family: Poor Story;
+}
+
+.rights{
+    text-transform: capitalize;
+    color: grey;
+}
+
+.social{
+    display: flex;
+}
+
+.social li{
+    list-style: none;
+    padding: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.social li a{
+    color: grey
+}
+
+.social li a:link{
+    text-decoration: none;
+}
+
+.up{
+    margin: 0 20px 20px auto;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.548);
+    height: 35px;
+    width: 40px;
+    text-align: center;
+}
+
+.up a{
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards, .cards2{
+        grid-template-columns: 1fr;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu2, nav,.social{
+        display: grid;
+    }
+
+    .menu2 li, .rights, .social li {
+        padding: 5px;
+        text-align: center;
+    }
+
+    nav{
+        justify-content: center;
+    }
+    
+    .logo{
+        margin: auto;
+    }
+
+    .minibox{
+        margin: auto;
+    }
+}
